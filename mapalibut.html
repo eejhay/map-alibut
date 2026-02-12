@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map-Alibut ning PSAU | Locate. Navigate. Arrive.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fcfaf8; }
+        .hero-bg {
+            background: linear-gradient(rgba(46, 125, 50, 0.92), rgba(27, 77, 31, 0.96)), 
+                        url('https://images.unsplash.com/photo-1523050335392-9befbf527f4c?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(15px);
+        }
+        .btn-shadow { box-shadow: 0 10px 30px -5px rgba(46, 125, 50, 0.4); }
+    </style>
+</head>
+<body>
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-stone-100 py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl">🗺️</span>
+                <h1 class="text-xl font-800 text-[#2E7D32] tracking-tighter">Map-Alibut</h1>
+            </div>
+            <div class="hidden md:block">
+                <span class="text-[10px] font-bold text-stone-400 uppercase tracking-[0.2em]">PSAU Navigation Portal</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg text-white pt-20 pb-32 px-6 relative">
+        <div class="container mx-auto text-center">
+            <div class="inline-block bg-yellow-400 text-stone-900 px-4 py-1.5 rounded-full text-[10px] font-800 uppercase tracking-widest mb-8 shadow-xl">
+                📍 Interactive Directory
+            </div>
+            
+            <h1 class="text-5xl md:text-8xl font-800 mb-6 tracking-tighter">
+                Map-Alibut <span class="font-light opacity-80 italic">ning</span> PSAU
+            </h1>
+            
+            <p class="text-xl md:text-2xl font-semibold text-green-100 mb-12 tracking-wide">
+                Locate. Navigate. Arrive.
+            </p>
+
+            <a href="https://felt.com/map/Getting-started-with-Felt-9BnL1iN2zTCWzBfQYL70lTA?loc=15.220098,120.693627,17.92z" 
+               target="_blank" 
+               class="btn-shadow inline-flex items-center gap-4 bg-white text-[#2E7D32] px-12 py-6 rounded-2xl font-800 text-xl transition-all transform hover:-translate-y-2 hover:bg-yellow-400 hover:text-stone-900 active:scale-95">
+               <span>🗺️</span> VIEW INTERACTIVE MAP
+            </a>
+        </div>
+    </header>
+
+    <section class="container mx-auto -mt-24 px-4 relative z-10">
+        <div class="glass-card rounded-[40px] shadow-2xl overflow-hidden border-[10px] border-white">
+            <div class="bg-stone-50 p-4 border-b flex justify-between items-center px-8">
+                <div class="flex gap-1.5">
+                    <div class="w-2.5 h-2.5 rounded-full bg-red-400"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-yellow-400"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-green-400"></div>
+                </div>
+                <p class="text-[11px] font-bold text-stone-400 uppercase tracking-widest">Live PSAU Map System</p>
+            </div>
+            <div class="h-[600px] w-full bg-stone-200">
+                <iframe 
+                    src="https://felt.com/embed/map/Getting-started-with-Felt-9BnL1iN2zTCWzBfQYL70lTA?loc=15.220098,120.693627,17.92z" 
+                    width="100%" height="100%" frameborder="0" style="border:none;" title="Map-Alibut Felt Map">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-800 text-stone-800 mb-4">How it Works</h2>
+            <div class="h-1.5 w-16 bg-[#2E7D32] mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="group text-center">
+                <div class="w-20 h-20 bg-green-50 text-green-600 rounded-3xl flex items-center justify-center text-4xl mx-auto mb-8 transition-transform group-hover:rotate-12">🔍</div>
+                <h3 class="font-800 text-2xl mb-4 text-stone-800">Locate</h3>
+                <p class="text-stone-500 leading-relaxed">Search for any building, office, or facility using the search bar or category filters.</p>
+            </div>
+            <div class="group text-center">
+                <div class="w-20 h-20 bg-blue-50 text-blue-600 rounded-3xl flex items-center justify-center text-4xl mx-auto mb-8 transition-transform group-hover:scale-110">🧭</div>
+                <h3 class="font-800 text-2xl mb-4 text-stone-800">Navigate</h3>
+                <p class="text-stone-500 leading-relaxed">View your current position relative to your destination and see the best route through campus.</p>
+            </div>
+            <div class="group text-center">
+                <div class="w-20 h-20 bg-yellow-50 text-yellow-600 rounded-3xl flex items-center justify-center text-4xl mx-auto mb-8 transition-transform group-hover:-translate-y-2">🏁</div>
+                <h3 class="font-800 text-2xl mb-4 text-stone-800">Arrive</h3>
+                <p class="text-stone-500 leading-relaxed">Reach your class or office on time with zero stress. Your campus, mastered.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-950 text-white py-16 px-6">
+        <div class="container mx-auto text-center">
+            <div class="flex items-center justify-center gap-3 mb-6">
+                <span class="text-3xl">🗺️</span>
+                <span class="text-2xl font-800 tracking-tighter">Map-Alibut ning PSAU</span>
+            </div>
+            <p class="text-stone-500 text-sm mb-8">Pampanga State Agricultural University Student Project</p>
+            <div class="h-px w-20 bg-stone-800 mx-auto mb-8"></div>
+            <p class="text-stone-600 text-[10px] uppercase tracking-[0.4em]">© 2026 Locate. Navigate. Arrive.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
